@@ -21,8 +21,3 @@ player.on('timeupdate', throttle(onPlay, 1000));
 
 
 
-
-
-
-
-
