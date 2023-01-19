@@ -29,19 +29,17 @@ formData = {}
 formEl.addEventListener('submit', handleSubmit);
 
 
-function populateInput()  {
+function populateInput() {
     const savedMessage = localStorage.getItem("feedback-form-state");
 
     if (savedMessage) {
         formData = JSON.parse(savedMessage);
-        textEl.value = formData.message;
-        mailEl.value = formData.email
-    } 
+        textEl.value = formData.message || "";
+        mailEl.value = formData.email || "";
+     
+    }
 }
  populateInput();
-
-// kom
-
 
 
 
